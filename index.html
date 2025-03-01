@@ -15,7 +15,7 @@
 
 <body class="bg-violet-50 h-full">
     <header class="pt-10">
-        <nav class=" flex justify-between items-center border  p-3 rounded-2xl bg-white mx-auto w-10/12">
+        <nav class=" flex justify-between items-center  p-3 rounded-2xl bg-white mx-auto w-10/12">
 
 
             <!-- nav logo $ name Left div-->
@@ -41,7 +41,7 @@
     <!-- =====================================Main Content======================================================= -->
     <main class="mt-5 mx-auto w-10/12 flex pb-10">
         <!---------------------------------- dashboard starts here -->
-        <section class="bg-white w-11/12 mr-3 pb-10 h-full border rounded-lg">
+        <section class="bg-white w-11/12 mr-3 pb-10 h-full rounded-lg">
 
             <!-- DashBoard Header parent Div -->
 
@@ -62,7 +62,8 @@
 
                 <!-- Discover Something New Div-2 -->
 
-                <div id="to-blog-page" class="w-6/12 p-3 ml-4 rounded-lg bg-gradient-to-r from-blue-600 to-blue-200 flex items-center ">
+                <div id="to-blog-page"
+                    class="w-6/12 p-3 ml-4 rounded-lg bg-gradient-to-r from-blue-600 to-blue-200 flex items-center ">
                     <img src="/assets/board.png" class="pl-4" srcset="">
                     <p class="text-white font-bold ml-4">Discover Something <br> New Today!</p>
                 </div>
@@ -72,8 +73,8 @@
                     <div class="bg-white p-4 ml-4 rounded-full">
                         <img class="" src="/assets/calender.png" alt="" srcset="">
                     </div>
-                    <div class="p-4">
-                        <p>Wed,<br> <span class="font-extrabold">Jul 28 2025 </span></p>
+                    <div class="p-4" id="date">
+                        <p class="font-extrabold"></p>
                     </div>
                 </div>
 
@@ -84,7 +85,7 @@
                 <!---------------------------- Div-1 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4">
                     <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Fix Mobile Button Issue
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -110,7 +111,7 @@
                 <!---------------------------- Div-2 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4">
                     <span class="p-2 bg-white rounded-lg">CloudSync</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Add Dark Mode
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -136,7 +137,7 @@
                 <!---------------------------- Div-3 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4">
                     <span class="p-2 bg-white rounded-lg">SwiftPay</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Optimize Home page 
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -164,7 +165,7 @@
                 <!---------------------------- Div-4 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4 mt-10">
                     <span class="p-2 bg-white rounded-lg">Meta</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Add new emoji 🤲
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -190,7 +191,7 @@
                 <!---------------------------- Div-5 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4 mt-10">
                     <span class="p-2 bg-white rounded-lg">Google LLC</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Integrate OpenAI API
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -215,8 +216,8 @@
                 </div>
                 <!---------------------------- Div-6 Box ------------------------------>
                 <div class="rounded-lg bg-violet-50 w-10/12 p-5 ml-4 mt-10">
-                    <span class="p-2 bg-white rounded-lg">Glassdoar</span>
-                    <h1 class="font-bold pt-5 pb-5">
+                    <span class="p-2 bg-white rounded-lg">Glassdoor</span>
+                    <h1 class="font-bold pt-5 pb-5 title">
                         Improve Job searching
                     </h1>
                     <div class="p-3 rounded-lg bg-white ">
@@ -230,7 +231,7 @@
                     <div class=" flex pt-5 justify-between items-center ">
                         <div class="items-center">
                             <p class="text-sm">Deadline</p>
-                            <p class="text-sm font-bold">21 March 2025</p>
+                            <p class="text-sm font-bold titel">21 March 2025</p>
                         </div>
                         <!-- Complete task button -->
                         <div class="">
@@ -255,6 +256,11 @@
             <!-- clear button -->
             <div class="ml-12 mt-6">
                 <button class="bg-blue-700 text-white p-2 rounded-lg ">Clear History</button>
+            </div>
+
+            <!-- DOM Div -->
+            <div class="dom-style" id="displayed-element">
+
             </div>
         </section>
     </main>
