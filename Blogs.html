@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- Tailwind Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="/CSS/Style.css">
+</head>
+
+<body class="bg-violet-50 h-full p-5">
+    <header class="pt-10 pb-5">
+        <nav class=" flex justify-between items-center border  p-3 rounded-2xl bg-white mx-auto w-10/12">
+            <!-- nav logo & name Left div-->
+            <div class="flex items-center gap-2">
+                <img src="/assets/logo.png" alt="" srcset="">
+                <h1 class="pr-4 text-4xl">Dev<span class="font-extrabold">Board</span></h1>
+            </div>
+
+            <!-- Back to Desk BTN -->
+            <div>
+                <button id="home-page-btn" class="bg-blue-700 text-white p-2 rounded">Back to Desk</button>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="text-center font-bold mb-4 text-xl">Blogs</h1>
+
+            <!-- Question Ans DIV -1-->
+
+            <div class="">
+                <div class="border  p-3 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="font-extrabold">
+                        Question-1: What are the different ways to select an element in the DOM?
+                    </p>
+
+                </div>
+                <div class="border p-2 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="mt-3 text-xs text-gray-500">
+                        You can select elements in DOM in few ways. getElementById() find by ID,
+                        getElementsByClassName() find by class, and getElementsByTagName() find by tag. querySelector()
+                        and querySelectorAll() are more flexible for selecting elements.
+                    </p>
+                </div>
+            </div>
+            <!-- Question Ans DIV -2-->
+            <div class="mt-3">
+                <div class="border  p-3 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="font-extrabold">
+                        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </p>
+
+                </div>
+                <div class="border  p-2 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="mt-3 text-xs text-gray-500">
+                        innerHTML show all HTML inside element, so it can change tags too. innerText only show visible
+                        text, it ignore hidden text and spaces. textContent show all text, even hidden ones, but no HTML
+                        tags.
+                    </p>
+                </div>
+            </div>
+            <!-- Question Ans DIV -3-->
+            <div class="mt-3">
+                <div class="border  p-3 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="font-extrabold">
+                        Question-3: What is event delegation in the DOM?
+                    </p>
+
+                </div>
+                <div class="border  p-2 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="mt-3 text-xs text-gray-500">
+                        Event delegation is when u put event on parent instead of many child. If child clicked, event go
+                        up to parent and run. This help when many child or new child added later.
+                    </p>
+                </div>
+            </div>
+            <!-- Question Ans DIV -4-->
+            <div class="mt-3">
+                <div class="border  p-3 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="font-extrabold">
+                        Question-4: What is event bubbling in the DOM?
+                    </p>
+
+                </div>
+                <div class="border  p-2 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="mt-3 text-xs text-gray-500">
+                        Event bubbling is when event start from clicked element and go up to parent, then grandparent
+                        and so on. It happen auto in DOM.
+                    </p>
+                </div>
+            </div>
+            <!-- Question Ans DIV -5-->
+            <div class="mt-3">
+                <div class="border  p-3 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="font-extrabold">
+                        Question-5: How do you create, add, and remove elements using JavaScript?
+                    </p>
+
+                </div>
+                <div class="border  p-2 rounded-lg bg-white mx-auto w-10/12">
+                    <p class="mt-3 text-xs text-gray-500">
+                        In JavaScript, you make element with document.createElement(), put it in page with appendChild()
+                        or append(), and remove it with remove().
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
