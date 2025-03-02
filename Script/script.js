@@ -1,3 +1,11 @@
+// current time
+function getCurrentTime() {
+    let now = new Date();
+    const currentTime = now.toLocaleTimeString('en-US',
+        { hour: '2-digit', minute: '2-digit' ,second: '2-digit'});
+    return currentTime;
+}
+
 let buttons = document.querySelectorAll('.complete-btn');
 let taskNumberElement = document.getElementById('task-number');
 let completedTasksElement = document.getElementById('completed-tasks');
@@ -12,9 +20,8 @@ for (let button of buttons) {
         let convertedTaskNum = parseInt(taskNumberElement.innerText);
         let convertedCompletedTasks = parseInt(completedTasksElement.innerText);
 
-
         button.disabled = true;
-        button.style.backgroundColor = "#ccc";
+        button.style.backgroundColor = "gray";
         button.style.cursor = "not-allowed";
 
         if (convertedTaskNum > 1) {
@@ -34,17 +41,29 @@ for (let button of buttons) {
 
         }
 
+        // new element
 
-        let title = document.querySelector('.title').innerText
+        let title = document.querySelector('.title').innerText;
+        let date = document.querySelector('.dynamic-date').innerText;
 
         if (newElement) {
             const p = document.createElement('p');
             p.classList.add('dom-style');
-            p.innerText = `You have completed the task: ${title}`;
+            p.innerText = `You have completed the task: ${title} | Deadline: ${date} | Completed at: ${getCurrentTime()}`;
+            
             newElement.appendChild(p);
         }
     });
 }
+
+// Clear History Button
+document.getElementById('clear-history-btn').addEventListener('click', function () {
+    const displayedElement = document.getElementById('displayed-element');
+
+    if (displayedElement) {
+        displayedElement.innerHTML = '';
+    }
+})
 
 // Blogs page button
 
@@ -58,7 +77,8 @@ document.getElementById('change-clr-btn').addEventListener('click', function () 
     randomNum = '#' + randomNum.toString(16);
     document.body.style.backgroundColor = randomNum;
 })
-// set current time and date
+
+// set current date
 function updateDate() {
     let now = new Date();
     let formattedDate = now.toLocaleDateString('en-US', {
